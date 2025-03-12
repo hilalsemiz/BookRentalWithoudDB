@@ -16,4 +16,8 @@
         <td width="200">Birth Date</td>
         <td>@Model.BirthDate.ToLongDateString()</td>
     </tr>
+    <div>
+        <a href="@Url.Action("Edit", "Student", new { id = Model.ID })" class="btn btn-warning">Edit</a>
+        <a href="@Url.Action("Delete", "Student", new { id = Model.ID })" class="btn btn-danger">Delete</a>
+    </div>
 </table>

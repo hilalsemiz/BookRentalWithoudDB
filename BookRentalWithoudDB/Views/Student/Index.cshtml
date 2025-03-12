@@ -1,5 +1,8 @@
 ﻿@model List<Student>
+<a href="@Url.Action("Create", "Student")" class="btn btn-primary">Create</a>
 <table>
+
+
     <thead>
         <tr>
             <td> ID </td>
@@ -17,6 +20,7 @@
         <td> @item.Surname </td>
         <td><a asp-controller="Student" asp-action="Detail" 
             asp-route-id="@item.ID"> Click For Detail </a></td>
+               
     </tr>
 
      }
